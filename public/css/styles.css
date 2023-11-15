@@ -1,0 +1,417 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+/* Paleta de colores -->
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header .form{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount{
+    font-size: 16px;
+    font-weight: normal;
+}
+.description{
+    font-size: 16px;
+    font-weight: normal;
+   visibility: hidden;
+}
+
+article:hover{
+    box-shadow:0px 0px 30px RGB(100,100,100);
+
+}
+article:hover .description{
+    visibility: visible;
+    
+}
+#icono:hover{
+    transform: rotate(-90deg);
+}
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    /*margin: 0 auto;*/
+    margin:auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+/* INICIO REGLAS PARA EL FOOTER */
+
+.pieCentrado{
+    text-align: center;
+}
+
+.iconoPie{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0044AA;
+    transition: 0.5s;
+}
+
+.seccionesPie{
+    padding: 10px;
+}
+
+/*FIN DE REGLAS PARA EL FOOTER */
+
+
+/********************* COMIENZO DE LAS REGLAS PARA LOS FORMULARIOS  *******/
+.register{
+width: 90%;
+margin: auto;
+background-color: var(--Amarillo);
+margin-bottom: 30px;}
+
+.register label{
+    font-size: large;
+    font-weight: bold;
+}
+.register input {
+        width: 100%; 
+        padding: 20px;
+      }
+.register input ::placeholder {
+    font-size: large;
+    color: #98a39c; 
+      }
+
+.profile{
+    width: 50%;
+    display: flex;
+    align-content: center;  
+    padding: 10px;  
+}
+
+.profile input{
+    width: 10%;
+}
+
+
+
+.interests{
+    width: 100%;
+    display: block;
+    align-content: center;  
+    padding: 10px;
+        
+}
+
+
+.interests input{
+    width: 10%;
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    align-content: center;  
+    padding: 10px;  
+}
+.botones .submit{
+    width: 100%;
+    padding: 10px;
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    align-content: center;  
+    padding: 10px;
+}
+
+
+.login label{
+    font-size: large;
+    font-weight: bold;
+}
+.login input {
+    width: 100%; 
+    padding: 20px;
+  }
+.login input ::placeholder {
+font-size: large;
+color: #98a39c; 
+  }
+
+    /********************* FINAL DE LAS REGLAS PARA LOS FORMULARIOS  *******/
+
+
+
+/* inicio de las reglas para tablet */
+@media (min-width: 361px){
+   /* ocultar la barra de navegacion*/
+    nav{
+        display: none;
+    }
+    main section article .description{
+        display: block;
+    }
+ 
+    
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    /******* CONFIGURACION DEL TOP-HEADER PARA TABLET ********/
+    div.top-header{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+    
+    top-header div.logo,
+    top-header .form
+    top-header #p{
+        width: 30%;
+}
+
+/*********** inicio de las reglas para desktop *****************/
+
+@media (min-width: 769px){
+    nav{
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    ul{
+        display: flex;
+        padding: 20px;
+    }
+
+    li{
+        padding: 20px;
+    }
+    div.top-header{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 5%;
+    }
+
+    div.burger-menu{
+        display: none;
+    }
+  main section div.products article{
+        width: 22%;
+  }
+    main section article .description{
+        display: block;
+    }
+ 
+    
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 22%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+       
+    }
+    .seccionesPie{
+        width: 30%;
+    }
+    .iconoPie:hover{
+        color:#39b54a;
+    }
+}
+
+}
