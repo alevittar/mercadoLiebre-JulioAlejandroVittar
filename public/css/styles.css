@@ -297,7 +297,19 @@ color: #98a39c;
   }
 
     /********************* FINAL DE LAS REGLAS PARA LOS FORMULARIOS  *******/
+/* reglas para celular */
+/* inicio de las reglas para tablet */
 
+@media (max-width: 360px){
+    nav{
+        display: none;
+    } 
+
+}
+
+
+
+/*fin reglas para celular*/
 
 
 /* inicio de las reglas para tablet */
